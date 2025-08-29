@@ -241,8 +241,10 @@ colorlinks,linkcolor=blue,citecolor=blue,final]{hyperref}
 \renewcommand{\headrulewidth}{0.75pt}
 % شکل‌دهی شماره و عنوان فصل در سربرگ
 \renewcommand{\chaptermark}[1]{\markboth{\@chapapp~\thechapter:\ #1}{}}
+%\renewcommand{\chaptermark}[1]{\markboth{\@chapapp~\thechapter}{}}
 \makeatletter
-\renewcommand{\rightmark}[1]{\@title}
+\renewcommand{\rightmark}[1]{}
+%\renewcommand{\rightmark}[1]{\@title}
 \makeatother
 %}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
