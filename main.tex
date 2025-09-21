@@ -27,7 +27,7 @@ twoside
 % ,draft
 ]{./tex/tehran-thesis}
 
-\bibliographystyle{unsrt-fa} % or IEEEtran, alpha, etc.
+
 % فایل commands.tex را مطالعه کنید؛ چون دستورات مربوط به فراخوانی بسته‌ها، فونت و دستورات خاص در این فایل قرار دارد.
 \input{./tex/commands}
 
@@ -62,12 +62,18 @@ twoside
 \small
 \onehalfspacing
 
-%\bibliographystyle{unsrt-fa} % or plainnat-fa for author-date
-\begin{latin}
-	\bibliography{./tex/MyReferences}
-\end{latin}
+
+
 
 }
+\renewcommand{\theenumiv}{\latinfont\arabic{enumiv}}
+%\begin{latin}
+	\bibliographystyle{unsrt-fa} % or IEEEtran, alpha, etc.
+	%\bibliographystyle{unsrt-fa} % or plainnat-fa for author-date
+	
+	\bibliography{./tex/MyReferences}
+%\end{latin}
+%\renewcommand{\bibname}{مراجع}  % for report/book
 
 \pagestyle{fancy}
 
